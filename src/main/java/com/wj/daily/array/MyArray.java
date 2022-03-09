@@ -20,7 +20,7 @@ public class MyArray {
      *
      * @date   2022/03/09
      *
-     * @param nums an array
+     * @param nums an array input
      */
     public void moveZero(int[] nums) {
         for (int i = 0, j = 0; i < nums.length; i++) {
