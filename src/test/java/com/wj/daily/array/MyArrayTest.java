@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 class MyArrayTest {
 
-    public MyArray myArray = new MyArray();
+    public MoveZero myArray = new MoveZero();
 
     @Test
     void testMoveZero() {

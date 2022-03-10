@@ -1,6 +1,6 @@
 package com.wj.daily.array;
 
-public class MyArray {
+public class MoveZero {
     /**
      * @link: https://leetcode-cn.com/problems/move-zeroes/
      *
