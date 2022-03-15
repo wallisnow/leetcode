@@ -39,16 +39,16 @@ public class ClimbingStairs {
 
 
     public ClimbingStairs() {
-        cache.put(1,1);
-        cache.put(2,2);
-        cache.put(3,3);
+        cache.put(1, 1);
+        cache.put(2, 2);
+        cache.put(3, 3);
     }
 
     public int climbStairsRecursiveWithCache(int n) {
         if (n <= 2) {
             return n;
         }
-        if (cache.containsKey(n)){
+        if (cache.containsKey(n)) {
             return cache.get(n);
         }
         int result = climbStairsRecursiveWithCache(n - 1) + climbStairsRecursiveWithCache(n - 2);
@@ -61,5 +61,17 @@ public class ClimbingStairs {
             return n;
         }
         return climbStairsRecursive(n - 1) + climbStairsRecursive(n - 2);
+    }
+
+    public int climbStairsDP(int n) {
+        int[] cache = new int[n + 1];
+        cache[0] = 1;
+        cache[1] = 1;
+        cache[2] = 2;
+        cache[3] = 3;
+        for (int i = 4; i <= n; i++) {
+            cache[i] = cache[i - 2] + cache[i - 1];
+        }
+        return cache[n];
     }
 }

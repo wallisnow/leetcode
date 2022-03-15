@@ -33,4 +33,10 @@ class ClimbingStairsTest {
         int i = climbingStairs.climbStairsRecursive(30);
         Assertions.assertEquals(1346269, i);
     }
+
+    @Test
+    void climbStairsDP() {
+        int i = climbingStairs.climbStairsDP(4);
+        Assertions.assertEquals(1346269, i);
+    }
 }
