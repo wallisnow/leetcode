@@ -64,6 +64,10 @@ public class ClimbingStairs {
     }
 
     public int climbStairsDP(int n) {
+        if (n <= 2) {
+            return n;
+        }
+
         int[] cache = new int[n + 1];
         cache[0] = 1;
         cache[1] = 1;
