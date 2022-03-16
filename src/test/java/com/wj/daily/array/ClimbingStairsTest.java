@@ -36,7 +36,7 @@ class ClimbingStairsTest {
 
     @Test
     void climbStairsDP() {
-        int i = climbingStairs.climbStairsDP(4);
+        int i = climbingStairs.climbStairsDP(30);
         Assertions.assertEquals(1346269, i);
     }
 }

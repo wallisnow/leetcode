@@ -3,6 +3,8 @@ package com.wj.daily.array;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 class MyArrayTest {
 
     public MoveZero myArray = new MoveZero();
